@@ -1,0 +1,21 @@
+.btn {
+    background-color: $blue;
+    color: $white;
+    padding: 20px 40px;
+    border-radius: 60px;
+    border: none;
+    font-family: inherit;
+    font-size: 20px;
+    letter-spacing: 1.3px;
+}
+
+#submit {
+    font-size: 16px;
+    letter-spacing: 1.04px;
+}
+
+.btn:hover {
+    background-color: $lightblue;
+    color: #000;
+    cursor: pointer;
+}

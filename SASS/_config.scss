@@ -1,0 +1,56 @@
+/* FONTS */
+@import url(https://db.onlinewebfonts.com/c/6005d17c8b0c8485d42b35493703ee4d?family=AvertaDemoPE-Regular);
+@import url(https://db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
+
+$mainfont: "AvertaDemoPE-Regular", sans-serif;
+$logofont: "Proxima Nova", sans-serif;
+
+/* COLORS */
+$backgroundcolor: #FEFEFE;
+$blue: #2639ED;
+$lightblue: #DAE9FF;
+$verylightblue: #F1F7FF;
+$orange: #FF9900;
+$pink: #FF007A;
+$green: #00DA71;
+$white: #FFF;
+$grey56: #565656;
+$grey75: #757575;
+
+/* BREAKPOINTS */
+$breakpoint-mobile: 481px;
+$breakpoint-tablet: 768px;
+$breakpoint-smallscreen: 1024px;
+$breakpoint-desktop: 1440px;
+
+/* RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: $mainfont;
+    background-color: $backgroundcolor;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}

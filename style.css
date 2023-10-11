@@ -1,0 +1,131 @@
+/* FONTS */
+@import url(https://db.onlinewebfonts.com/c/6005d17c8b0c8485d42b35493703ee4d?family=AvertaDemoPE-Regular);
+@import url(https://db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
+/* COLORS */
+/* BREAKPOINTS */
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "AvertaDemoPE-Regular", sans-serif;
+  background-color: #FEFEFE;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 27.147px;
+}
+.logo span {
+  font-family: "Proxima Nova", sans-serif;
+  font-weight: 700;
+}
+
+footer .logo {
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #2639ED;
+  color: #FFF;
+  padding: 20px 40px;
+  border-radius: 60px;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  letter-spacing: 1.3px;
+}
+
+#submit {
+  font-size: 16px;
+  letter-spacing: 1.04px;
+}
+
+.btn:hover {
+  background-color: #DAE9FF;
+  color: #000;
+  cursor: pointer;
+}
+
+nav {
+  max-width: 1150px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 42px;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 16px;
+  letter-spacing: 0.16px;
+  position: fixed;
+  right: -50vh;
+  transition: all 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+@media (min-width: 1024px) {
+  nav ul {
+    position: static;
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+nav ul a:hover {
+  color: #2639ED;
+}
+nav .burger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 30px;
+  cursor: pointer;
+  margin: 1rem;
+  z-index: 1000;
+}
+@media (min-width: 1024px) {
+  nav .burger {
+    display: none;
+  }
+}
+nav .burger .slice {
+  background-color: #000;
+  height: 3px;
+}
+nav #burger {
+  display: none;
+}
+nav #burger:checked ~ ul {
+  right: 0;
+  top: 0;
+  background-color: #DAE9FF;
+  padding: 120px 50px;
+  text-align: right;
+  width: 70vw;
+  height: 100vh;
+}
