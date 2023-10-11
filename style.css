@@ -129,3 +129,29 @@ nav #burger:checked ~ ul {
   width: 70vw;
   height: 100vh;
 }
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  color: #565656;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.size18 {
+  color: #757575;
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 14px;
+}
+footer h4 {
+  font-size: 20px;
+}
