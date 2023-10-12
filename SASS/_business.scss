@@ -1,3 +1,37 @@
 .business {
-    background-color: green;
+    @include container;
+    align-items: center;
+
+    .title {
+        grid-column: 2/-2;
+        grid-row: 1;
+        @media (min-width: $breakpoint-smallscreen) {
+            grid-column: 2/6;
+        }
+    }
+
+    .card-container {
+        grid-column: 2/-2;
+        grid-row: 2;
+        @media (min-width: $breakpoint-smallscreen) {
+                grid-column: 7/-2;
+                grid-row: 1;
+            }
+    }
+
+    .rectangle {
+        z-index: -1;
+        background-color: #F4F9FF;
+        border-top-left-radius: 150px;
+        width: 1047px;
+        height: 619px;
+        grid-column: 2/-2;
+        grid-row: 2/3;
+        @media (min-width: $breakpoint-smallscreen) {
+                grid-column: 5/-2;
+                grid-row: 1;
+                width: 1047px;
+                height: 619px;
+            }
+    }
 }

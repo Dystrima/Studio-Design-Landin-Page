@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <title>Studio Design Landin Page</title>
 </head>
@@ -25,7 +26,7 @@
         </ul>
     </nav>
 
-    <div class="container hero">
+    <div class="hero">
         <div class="digital">
             <h2>A Digital Product Agency</h2>
             <p>Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</p>
@@ -49,6 +50,7 @@
                 </div>
             </div>
         </div>
+        <div class="cover-img"><img src="01.png" alt=""></div>
     </div>
 
     <div class="container client">
@@ -56,14 +58,32 @@
             <h2>Our Client</h2>
             <p class="size18">Several selected clients, who already believe in our service.</p>
         </div>
-        <div>SWIPER AVEC LES LOGOS !!!!</div>
+        <!-- Slider main container -->
+        <div class="swiper mySwiperLogo">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide google">Google</div>
+                <div class="swiper-slide airbnb">Airbnb</div>
+                <div class="swiper-slide ubereats">Uber Eats</div>
+                <div class="swiper-slide amazon">Amazon</div>
+                <div class="swiper-slide caats">Caats</div>
+                <div class="swiper-slide edgard">Edgar Cooper</div>
+                <div class="swiper-slide royal">Royal Canin</div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div> -->
+        
+        </div>
     </div>
 
-    <div class="container business">
+    <div class="business">
         <div class="title">
             <h2>How can we help your Business ?</h2>
             <p>We build readymade websites, mobile applications, and elaborate online business services.</p>
         </div>
+        <div class="rectangle"></div>
         <div class="card-container">
             <div class="card">
                 <div class="icon">LE SVG</div>
@@ -227,6 +247,7 @@
         <div class="copyright">Copyright © 2022 Avi Yansah</div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

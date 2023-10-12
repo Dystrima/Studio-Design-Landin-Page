@@ -55,3 +55,9 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
+@mixin container($max-width: 1200px) {
+    display: grid;
+    grid-template-columns:
+        minmax(5vw, 1fr) repeat(12, minmax(11px, $max-width / 12)) minmax(5vw, 1fr);
+}

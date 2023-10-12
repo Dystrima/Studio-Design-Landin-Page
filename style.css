@@ -157,16 +157,33 @@ footer h4 {
   font-size: 20px;
 }
 
-.digital {
-  max-width: 471px;
+.hero {
+  display: grid;
+  grid-template-columns: minmax(5vw, 1fr) repeat(12, minmax(11px, 100px)) minmax(5vw, 1fr);
+  align-items: center;
 }
-.digital h2 {
+.hero .digital {
+  grid-column: 2/-2;
+  grid-row: 1;
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .hero .digital {
+    max-width: 471px;
+  }
+}
+@media (min-width: 1024px) {
+  .hero .digital {
+    grid-column: 2/7;
+  }
+}
+.hero .digital h2 {
   margin-bottom: 40px;
 }
-.digital p {
+.hero .digital p {
   margin-bottom: 33px;
 }
-.digital .modalcontainer {
+.hero .digital .modalcontainer {
   display: none;
   position: fixed;
   left: 0;
@@ -177,7 +194,7 @@ footer h4 {
   background-color: rgba(15, 15, 15, 0.6);
   cursor: pointer;
 }
-.digital .modalcontainer .modal {
+.hero .digital .modalcontainer .modal {
   background-color: #FFF;
   max-width: 300px;
   margin: 30% auto;
@@ -187,32 +204,48 @@ footer h4 {
   cursor: default;
 }
 @media (min-width: 768px) {
-  .digital .modalcontainer .modal {
+  .hero .digital .modalcontainer .modal {
     max-width: 500px;
   }
 }
 @media (min-width: 1024px) {
-  .digital .modalcontainer .modal {
+  .hero .digital .modalcontainer .modal {
     max-width: 800px;
   }
 }
-.digital .modalcontainer .modal .close {
+.hero .digital .modalcontainer .modal .close {
   float: right;
   cursor: pointer;
 }
-.digital .modalcontainer .modal .text {
+.hero .digital .modalcontainer .modal .text {
   padding: 1.5rem;
 }
-.digital .modalcontainer .modal form {
+.hero .digital .modalcontainer .modal form {
   border: 1px dotted #2639ED;
   padding: 1rem;
 }
-.digital .modalcontainer .modal form input {
+.hero .digital .modalcontainer .modal form input {
   margin-bottom: 1rem;
 }
-.digital .modalcontainer .modal form p {
+.hero .digital .modalcontainer .modal form p {
   margin: 0 auto;
   max-width: 300px;
+}
+.hero .cover-img {
+  grid-row: 2;
+  grid-column: 2/-1;
+}
+@media (min-width: 1024px) {
+  .hero .cover-img {
+    grid-column: 8/-1;
+    grid-row: 1;
+  }
+}
+.hero .cover-img img {
+  width: 754px;
+  height: 512px;
+  object-fit: cover;
+  border-bottom-left-radius: 200px;
 }
 
 .noscroll {
@@ -234,14 +267,13 @@ footer h4 {
 }
 
 .client {
-  background-color: red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 60px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .client {
     flex-direction: row;
   }
@@ -252,9 +284,82 @@ footer h4 {
 .client .our-client h2 {
   margin-bottom: 17px;
 }
+.client .swiper {
+  height: 50px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .client .swiper {
+    max-width: 330px;
+  }
+}
+@media (min-width: 1024px) {
+  .client .swiper {
+    max-width: 800px;
+  }
+}
+.client .swiper .google {
+  content: url("Google Logo.svg");
+}
+.client .swiper .airbnb {
+  content: url("Airbnb Logo.svg");
+}
+.client .swiper .ubereats {
+  content: url("Uber Eats Logo.svg");
+}
+.client .swiper .amazon {
+  content: url("Amazon Logo.svg");
+}
+.client .swiper .caats {
+  content: url(https://caats.co/wp-content/uploads/2021/01/logo.svg);
+}
+.client .swiper .edgard {
+  content: url(https://www.edgardcooper.com/images/logo-brand-dark.svg);
+}
+.client .swiper .royal {
+  content: url(https://upload.wikimedia.org/wikipedia/commons/a/af/Royal-Canin-Logo.svg);
+}
 
 .business {
-  background-color: green;
+  display: grid;
+  grid-template-columns: minmax(5vw, 1fr) repeat(12, minmax(11px, 100px)) minmax(5vw, 1fr);
+  align-items: center;
+}
+.business .title {
+  grid-column: 2/-2;
+  grid-row: 1;
+}
+@media (min-width: 1024px) {
+  .business .title {
+    grid-column: 2/6;
+  }
+}
+.business .card-container {
+  grid-column: 2/-2;
+  grid-row: 2;
+}
+@media (min-width: 1024px) {
+  .business .card-container {
+    grid-column: 7/-2;
+    grid-row: 1;
+  }
+}
+.business .rectangle {
+  z-index: -1;
+  background-color: #F4F9FF;
+  border-top-left-radius: 150px;
+  width: 1047px;
+  height: 619px;
+  grid-column: 2/-2;
+  grid-row: 2/3;
+}
+@media (min-width: 1024px) {
+  .business .rectangle {
+    grid-column: 5/-2;
+    grid-row: 1;
+    width: 1047px;
+    height: 619px;
+  }
 }
 
 .agency {

@@ -1,11 +1,10 @@
 .client {
-    background-color: red;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    @media (min-width: $breakpoint-smallscreen) {
+    @media (min-width: $breakpoint-tablet) {
         flex-direction: row;
     }
 
@@ -13,6 +12,48 @@
         max-width: 336px;
         h2 {
             margin-bottom: 17px;
+        }
+    }
+
+    .swiper {
+        height: 50px;
+        width: 100%;
+        @media (min-width: $breakpoint-tablet) {
+            max-width: 330px;
+        }
+        @media (min-width: $breakpoint-smallscreen) {
+            max-width: 800px;
+        }
+        
+
+        .google {
+            content: url('Google Logo.svg');
+        }
+
+        .airbnb {
+            content: url('Airbnb Logo.svg');
+        }
+
+        .ubereats {
+            content: url('Uber Eats Logo.svg');
+            // height: 30px;
+        }
+
+        .amazon {
+            content: url('Amazon Logo.svg');
+            // height: 40px;
+        }
+
+        .caats {
+            content: url(https://caats.co/wp-content/uploads/2021/01/logo.svg);
+        }
+
+        .edgard {
+            content: url(https://www.edgardcooper.com/images/logo-brand-dark.svg);
+        }
+
+        .royal {
+            content: url(https://upload.wikimedia.org/wikipedia/commons/a/af/Royal-Canin-Logo.svg);
         }
     }
 }
