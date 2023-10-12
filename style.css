@@ -157,6 +157,118 @@ footer h4 {
   font-size: 20px;
 }
 
+.digital {
+  max-width: 471px;
+}
+.digital h2 {
+  margin-bottom: 40px;
+}
+.digital p {
+  margin-bottom: 33px;
+}
+.digital .modalcontainer {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+  background-color: rgba(15, 15, 15, 0.6);
+  cursor: pointer;
+}
+.digital .modalcontainer .modal {
+  background-color: #FFF;
+  max-width: 300px;
+  margin: 30% auto;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 10px 0 #0f0f0f;
+  cursor: default;
+}
+@media (min-width: 768px) {
+  .digital .modalcontainer .modal {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1024px) {
+  .digital .modalcontainer .modal {
+    max-width: 800px;
+  }
+}
+.digital .modalcontainer .modal .close {
+  float: right;
+  cursor: pointer;
+}
+.digital .modalcontainer .modal .text {
+  padding: 1.5rem;
+}
+.digital .modalcontainer .modal form {
+  border: 1px dotted #2639ED;
+  padding: 1rem;
+}
+.digital .modalcontainer .modal form input {
+  margin-bottom: 1rem;
+}
+.digital .modalcontainer .modal form p {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+.msg {
+  display: none;
+}
+
+.success {
+  color: green;
+  background-color: lightgreen;
+}
+
+.error {
+  color: darkred;
+  background-color: lightcoral;
+}
+
+.client {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+@media (min-width: 1024px) {
+  .client {
+    flex-direction: row;
+  }
+}
+.client .our-client {
+  max-width: 336px;
+}
+.client .our-client h2 {
+  margin-bottom: 17px;
+}
+
+.business {
+  background-color: green;
+}
+
+.agency {
+  background-color: yellow;
+}
+
+.happy {
+  background-color: violet;
+}
+
+.newsletter {
+  background-color: blue;
+}
+
 footer .line {
   max-width: 1200px;
   height: 1px;

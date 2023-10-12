@@ -1,0 +1,18 @@
+.client {
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    @media (min-width: $breakpoint-smallscreen) {
+        flex-direction: row;
+    }
+
+    .our-client {
+        max-width: 336px;
+        h2 {
+            margin-bottom: 17px;
+        }
+    }
+}
