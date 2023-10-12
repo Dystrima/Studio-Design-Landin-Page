@@ -1,6 +1,6 @@
 /* FONTS */
 @import url(https://db.onlinewebfonts.com/c/6005d17c8b0c8485d42b35493703ee4d?family=AvertaDemoPE-Regular);
-@import url(https://db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
+@import url(https://db.onlinewebfonts.com/c/72b6f2c9990bd3d37b8013a59ed78902?family=Proxima+Nova+Bold);
 /* COLORS */
 /* BREAKPOINTS */
 /* RESET */
@@ -30,15 +30,16 @@ body {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1240px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .logo {
   font-size: 27.147px;
 }
 .logo span {
-  font-family: "Proxima Nova", sans-serif;
+  font-family: "Proxima Nova Bold", sans-serif;
   font-weight: 700;
 }
 
@@ -69,7 +70,7 @@ footer .logo {
 }
 
 nav {
-  max-width: 1150px;
+  max-width: 1240px;
   margin: 0 auto;
   display: flex;
   gap: 60px;
@@ -154,4 +155,92 @@ footer p {
 }
 footer h4 {
   font-size: 20px;
+}
+
+footer .line {
+  max-width: 1200px;
+  height: 1px;
+  background-color: #E4E4E4;
+}
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 100px;
+  margin-top: 60px;
+}
+@media (min-width: 1024px) {
+  footer .footer-content {
+    flex-wrap: nowrap;
+    gap: 191px;
+    flex-direction: row;
+  }
+}
+footer .footer-content .aStudio {
+  max-width: 270px;
+}
+footer .footer-content .aStudio .logo {
+  margin-bottom: 26px;
+}
+footer .footer-content .aStudio p {
+  margin-bottom: 60px;
+}
+footer .footer-content .aStudio .socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+footer .footer-content .aStudio .socials .facebook {
+  fill: #3B5998;
+}
+footer .footer-content .aStudio .socials .facebook :hover #Vector {
+  fill: #2639ED;
+}
+footer .footer-content .aStudio .socials .twitter {
+  fill: #55ACEE;
+}
+footer .footer-content .aStudio .socials .twitter :hover #Vector {
+  fill: #2639ED;
+}
+footer .footer-content .aStudio .socials .linkedin {
+  fill: #007AB9;
+}
+footer .footer-content .aStudio .socials .linkedin :hover #Vector {
+  fill: #2639ED;
+}
+footer .footer-content .sections {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  flex-wrap: wrap;
+  order: -1;
+}
+@media (min-width: 1024px) {
+  footer .footer-content .sections {
+    flex-wrap: nowrap;
+    order: 1;
+    flex-direction: row;
+    gap: 120px;
+  }
+}
+footer .footer-content .sections h4 {
+  margin-bottom: 24px;
+  text-wrap: nowrap;
+}
+footer .footer-content .sections ul a {
+  font-size: 14px;
+  line-height: 200%;
+  text-wrap: nowrap;
+}
+footer .footer-content a:hover {
+  color: #2639ED;
+}
+footer .copyright {
+  margin-top: 17px;
+  margin-bottom: 23px;
+  color: #A4A4A4;
+  text-align: center;
+  font-size: 14px;
+  line-height: 160%;
 }

@@ -1,9 +1,9 @@
 /* FONTS */
 @import url(https://db.onlinewebfonts.com/c/6005d17c8b0c8485d42b35493703ee4d?family=AvertaDemoPE-Regular);
-@import url(https://db.onlinewebfonts.com/c/bf9f5d50c1b928ff21436517a1a95ad9?family=Proxima+Nova);
+@import url(https://db.onlinewebfonts.com/c/72b6f2c9990bd3d37b8013a59ed78902?family=Proxima+Nova+Bold);
 
 $mainfont: "AvertaDemoPE-Regular", sans-serif;
-$logofont: "Proxima Nova", sans-serif;
+$logofont: "Proxima Nova Bold", sans-serif;
 
 /* COLORS */
 $backgroundcolor: #FEFEFE;
@@ -51,6 +51,7 @@ body {
 }
 
 .container {
-    max-width: 1110px;
+    max-width: 1240px;
     margin: 0 auto;
+    padding: 20px;
 }

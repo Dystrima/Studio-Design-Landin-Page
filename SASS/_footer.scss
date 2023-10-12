@@ -1,0 +1,93 @@
+footer {
+    .line {
+        max-width: 1200px;
+        height: 1px;
+        background-color: #E4E4E4;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 100px;
+        margin-top: 60px;
+        @media (min-width: $breakpoint-smallscreen) {
+                flex-wrap: nowrap;
+                gap: 191px;
+                flex-direction: row;
+            }
+
+        .aStudio {
+            max-width: 270px;
+            .logo {
+                margin-bottom: 26px;
+            }
+            p {
+                margin-bottom: 60px;
+            }
+            .socials {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 30px;
+                .facebook {
+                    fill: #3B5998;
+                    :hover #Vector {
+                        fill: $blue;
+                    }
+                }
+                .twitter {
+                    fill: #55ACEE;
+                    :hover #Vector {
+                            fill: $blue;
+                        }
+                }
+                .linkedin {
+                    fill: #007AB9;
+                    :hover #Vector {
+                            fill: $blue;
+                        }
+                }
+            }
+        }
+
+        .sections {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            flex-wrap: wrap;
+            order: -1;
+
+            @media (min-width: $breakpoint-smallscreen) {
+                flex-wrap: nowrap;
+                order: 1;
+                flex-direction: row;
+                gap: 120px;
+            }
+            h4 {
+                margin-bottom: 24px;
+                text-wrap: nowrap;
+            }
+            ul {
+                a {
+                    font-size: 14px;
+                    line-height: 200%;
+                    text-wrap: nowrap;
+                }
+            }
+        }
+
+        a:hover {
+            color: $blue;
+        }
+    }
+
+    .copyright {
+        margin-top: 17px;
+        margin-bottom: 23px;
+        color: #A4A4A4;
+        text-align: center;
+        font-size: 14px;
+        line-height: 160%;
+        }
+}
