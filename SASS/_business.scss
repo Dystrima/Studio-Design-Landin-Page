@@ -4,11 +4,37 @@
     margin-bottom: 146px;
 
     .title {
+        position: relative;
         grid-column: 2/-2;
         grid-row: 1;
+        z-index: 10;
         @media (min-width: $breakpoint-desktop) {
             grid-column: 2/6;
         }
+    }
+
+    .title::before {
+        content: url("Rectangle 25.svg");
+        position: absolute;
+        z-index: -5;
+        top: -60px;
+        left: -39px;
+    }
+
+    .title::after {
+        content: url("DotE7.svg");
+        position: absolute;
+        z-index: -5;
+        top: 284px;
+        left: 4px;
+    }
+
+    .title p::after {
+        content: url("DotE7.svg");
+        position: absolute;
+        z-index: -5;
+        top: 284px;
+        left: 213px;
     }
 
     .card-container {
@@ -87,7 +113,7 @@
     }
 
     .rectangle {
-        z-index: -1;
+        position: relative;
         background-color: #F4F9FF;
         border-top-left-radius: 150px;
         height: 619px;
@@ -97,5 +123,13 @@
                 grid-column: 5/15;
                 grid-row: 1;
             }
+    }
+
+    .rectangle::before {
+        position: absolute;
+        content: url("Ellipse 87.svg");
+        bottom: -72px;
+        right: 143px;
+        z-index: -50;
     }
 }

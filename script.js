@@ -182,3 +182,28 @@ const swiper = new Swiper(".mySwiperLogo", {
 });
 
 /* CLIENTS */
+const swiperImg = new Swiper(".mySwiperImg", {
+  loop: true,
+  spaceBetween: 100,
+  slidesPerView: 1,
+  watchSlidesProgress: true,
+  allowTouchMove: false,
+});
+
+const swiperClients = new Swiper(".mySwiperClients", {
+  loop: true,
+  spaceBetween: 10,
+
+  allowTouchMove: false,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  thumbs: {
+    swiper: swiperImg,
+  },
+
+  autoplay: { delay: 3000 },
+});

@@ -23,6 +23,7 @@
     }
 
     .since2016{
+        position: relative;
         order: -2;
         @media (min-width: $breakpoint-smallscreen) {
             order: 2;
@@ -30,5 +31,20 @@
         h2 {
             margin-bottom: 30px;
         }
+    }
+
+    .since2016::after {
+        position: absolute;
+        content: url("Ellipse 86.svg");
+        z-index: -5;
+        left: -206px;
+    }
+
+    .since2016::before {
+        position: absolute;
+        content: url("Rectangle 26.svg");
+        z-index: -5;
+        left: -39px;
+        top: -24px;
     }
 }

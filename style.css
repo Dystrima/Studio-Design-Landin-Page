@@ -179,6 +179,7 @@ footer h4 {
   margin-bottom: 136px;
 }
 .hero .digital {
+  position: relative;
   grid-column: 2/-2;
   grid-row: 1;
   margin-bottom: 50px;
@@ -206,14 +207,14 @@ footer h4 {
   top: 0;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 100;
   background-color: rgba(15, 15, 15, 0.6);
   cursor: pointer;
 }
 .hero .digital .modalcontainer .modal {
   background-color: #FFF;
   max-width: 300px;
-  margin: 30% auto;
+  margin: 40% auto;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 10px 0 #0f0f0f;
@@ -227,6 +228,11 @@ footer h4 {
 @media (min-width: 1024px) {
   .hero .digital .modalcontainer .modal {
     max-width: 800px;
+  }
+}
+@media (min-width: 1440px) {
+  .hero .digital .modalcontainer .modal {
+    margin: 20% auto;
   }
 }
 .hero .digital .modalcontainer .modal .close {
@@ -247,7 +253,22 @@ footer h4 {
   margin: 0 auto;
   max-width: 300px;
 }
+.hero .digital::after {
+  content: url(Dot.svg);
+  z-index: -5;
+  position: absolute;
+  left: -53px;
+  bottom: -119px;
+}
+.hero .modal-btn::after {
+  content: url(Dot.svg);
+  z-index: -5;
+  position: absolute;
+  left: 160px;
+  bottom: -119px;
+}
 .hero .cover-img {
+  position: relative;
   grid-row: 2;
   grid-column: 2/-1;
 }
@@ -261,6 +282,20 @@ footer h4 {
   height: 512px;
   object-fit: cover;
   border-bottom-left-radius: 200px;
+}
+.hero .cover-img::before {
+  content: url("Ellipse 85.svg");
+  position: absolute;
+  top: 0;
+  left: -63px;
+  z-index: -5;
+}
+.hero .cover-img::after {
+  content: url("Rectangle 23.svg");
+  position: absolute;
+  bottom: -96px;
+  right: 120px;
+  z-index: -5;
 }
 
 .noscroll {
@@ -329,13 +364,36 @@ footer h4 {
   margin-bottom: 146px;
 }
 .business .title {
+  position: relative;
   grid-column: 2/-2;
   grid-row: 1;
+  z-index: 10;
 }
 @media (min-width: 1440px) {
   .business .title {
     grid-column: 2/6;
   }
+}
+.business .title::before {
+  content: url("Rectangle 25.svg");
+  position: absolute;
+  z-index: -5;
+  top: -60px;
+  left: -39px;
+}
+.business .title::after {
+  content: url("DotE7.svg");
+  position: absolute;
+  z-index: -5;
+  top: 284px;
+  left: 4px;
+}
+.business .title p::after {
+  content: url("DotE7.svg");
+  position: absolute;
+  z-index: -5;
+  top: 284px;
+  left: 213px;
 }
 .business .card-container {
   grid-column: 2/-2;
@@ -412,7 +470,7 @@ footer h4 {
   grid-column: 2;
 }
 .business .rectangle {
-  z-index: -1;
+  position: relative;
   background-color: #F4F9FF;
   border-top-left-radius: 150px;
   height: 619px;
@@ -424,6 +482,13 @@ footer h4 {
     grid-column: 5/15;
     grid-row: 1;
   }
+}
+.business .rectangle::before {
+  position: absolute;
+  content: url("Ellipse 87.svg");
+  bottom: -72px;
+  right: 143px;
+  z-index: -50;
 }
 
 .agency {
@@ -456,6 +521,7 @@ footer h4 {
   }
 }
 .agency .since2016 {
+  position: relative;
   order: -2;
 }
 @media (min-width: 1024px) {
@@ -466,8 +532,22 @@ footer h4 {
 .agency .since2016 h2 {
   margin-bottom: 30px;
 }
+.agency .since2016::after {
+  position: absolute;
+  content: url("Ellipse 86.svg");
+  z-index: -5;
+  left: -206px;
+}
+.agency .since2016::before {
+  position: absolute;
+  content: url("Rectangle 26.svg");
+  z-index: -5;
+  left: -39px;
+  top: -24px;
+}
 
 .happy {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -484,11 +564,71 @@ footer h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  gap: 38px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .happy .clients {
     flex-direction: row;
   }
+}
+.happy .clients .clients-caroussel {
+  display: flex;
+  flex-direction: column;
+  gap: 67px;
+}
+@media (min-width: 1024px) {
+  .happy .clients .clients-caroussel {
+    flex-direction: row;
+  }
+}
+.happy .clients .clients-caroussel .swiper {
+  width: 100vw;
+  height: 500px;
+}
+.happy .clients .clients-caroussel .mySwiperImg {
+  width: 100vw;
+  height: 350px;
+}
+@media (min-width: 768px) {
+  .happy .clients .clients-caroussel .mySwiperImg {
+    width: 400px;
+    height: 400px;
+  }
+}
+.happy .clients .clients-caroussel .mySwiperImg img {
+  width: 350px;
+  height: 350px;
+  border-radius: 500px 0px 500px 500px;
+  object-fit: cover;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 768px) {
+  .happy .clients .clients-caroussel .mySwiperImg img {
+    width: 389px;
+    height: 389px;
+  }
+}
+.happy .clients .clients-caroussel .mySwiperClients {
+  width: 350px;
+  height: 185px;
+}
+@media (min-width: 768px) {
+  .happy .clients .clients-caroussel .mySwiperClients {
+    width: 412px;
+  }
+}
+.happy .clients .clients-caroussel .mySwiperClients .swiper-slide h3 {
+  margin-bottom: 21px;
+}
+.happy .clients .clients-caroussel .mySwiperClients .swiper-pagination {
+  text-align: left;
+}
+.happy .clients .clients-caroussel .mySwiperClients .swiper-pagination-bullet {
+  background-color: #E7F0FC;
+}
+.happy .clients .clients-caroussel .mySwiperClients .swiper-pagination-bullet-active {
+  background-color: #2639ED;
 }
 .happy .clients .bubbles-img {
   position: relative;
@@ -561,7 +701,46 @@ footer h4 {
   bottom: 60px;
 }
 
+.happy::before {
+  position: absolute;
+  content: url("Ellipse 94.svg");
+  left: -10px;
+  bottom: 670px;
+  z-index: -5;
+}
+@media (min-width: 768px) {
+  .happy::before {
+    left: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  .happy::before {
+    left: 25px;
+    bottom: 450px;
+  }
+}
+@media (min-width: 1440px) {
+  .happy::before {
+    left: -10px;
+    bottom: 12px;
+  }
+}
+
+.happy::after {
+  position: absolute;
+  content: url("Dot.svg");
+  top: 188px;
+  left: 230px;
+}
+@media (min-width: 1440px) {
+  .happy::after {
+    top: 188px;
+    left: 230px;
+  }
+}
+
 .newsletter {
+  position: relative;
   margin-bottom: 107px;
   display: flex;
   justify-content: center;
@@ -617,6 +796,14 @@ footer h4 {
 .newsletter form #email {
   border: none;
   height: 20px;
+}
+
+.newsletter::before {
+  position: absolute;
+  content: url("Rectangle 32.svg");
+  bottom: -39px;
+  left: -38px;
+  z-index: -5;
 }
 
 footer .line {
