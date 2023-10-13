@@ -1,3 +1,13 @@
 .happy {
-    background-color: violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .happy-client {
+        margin-bottom: 113px;
+        h2 {
+            margin-bottom: 17px;
+        }
+    }
 }

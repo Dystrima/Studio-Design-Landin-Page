@@ -11,8 +11,11 @@ $blue: #2639ED;
 $lightblue: #DAE9FF;
 $verylightblue: #F1F7FF;
 $orange: #FF9900;
+$verylightorange: #FFF7E3;
 $pink: #FF007A;
+$verylightpink: #FFF2F8;
 $green: #00DA71;
+$verylightgreen: #DEFFEE;
 $white: #FFF;
 $grey56: #565656;
 $grey75: #757575;
@@ -59,5 +62,5 @@ body {
 @mixin container($max-width: 1200px) {
     display: grid;
     grid-template-columns:
-        minmax(5vw, 1fr) repeat(12, minmax(11px, $max-width / 12)) minmax(5vw, 1fr);
+        minmax(5vw, 1fr) repeat(12, minmax(11px, calc($max-width / 12))) minmax(5vw, 1fr);
 }
