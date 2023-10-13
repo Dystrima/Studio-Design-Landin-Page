@@ -35,6 +35,20 @@ body {
   padding: 20px;
 }
 
+.msg {
+  display: none;
+}
+
+.success {
+  color: green;
+  background-color: lightgreen;
+}
+
+.error {
+  color: darkred;
+  background-color: lightcoral;
+}
+
 .logo {
   font-size: 27.147px;
 }
@@ -253,20 +267,6 @@ footer h4 {
   overflow: hidden;
 }
 
-.msg {
-  display: none;
-}
-
-.success {
-  color: green;
-  background-color: lightgreen;
-}
-
-.error {
-  color: darkred;
-  background-color: lightcoral;
-}
-
 .client {
   display: flex;
   flex-direction: column;
@@ -472,6 +472,7 @@ footer h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 148px;
 }
 .happy .happy-client {
   margin-bottom: 113px;
@@ -479,9 +480,143 @@ footer h4 {
 .happy .happy-client h2 {
   margin-bottom: 17px;
 }
+.happy .clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .happy .clients {
+    flex-direction: row;
+  }
+}
+.happy .clients .bubbles-img {
+  position: relative;
+  width: 348px;
+  height: 355px;
+  background: url("Ellipse 93.svg") no-repeat 21px;
+}
+.happy .clients .bubbles-img img {
+  position: absolute;
+}
+.happy .clients .bubbles-img .client1 {
+  border-radius: 50%;
+  width: 98px;
+  height: 98px;
+  object-fit: cover;
+  top: 58px;
+}
+.happy .clients .bubbles-img .client2 {
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  left: 137px;
+}
+.happy .clients .bubbles-img .client3 {
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  right: 45px;
+  top: 63px;
+}
+.happy .clients .bubbles-img .client4 {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  top: 107px;
+  right: 104px;
+}
+.happy .clients .bubbles-img .client5 {
+  border-radius: 50%;
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  right: 0;
+  top: 150px;
+}
+.happy .clients .bubbles-img .client6 {
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  top: 203px;
+}
+.happy .clients .bubbles-img .client7 {
+  border-radius: 50%;
+  width: 98px;
+  height: 98px;
+  object-fit: cover;
+  bottom: 0;
+  left: 98px;
+}
+.happy .clients .bubbles-img .client8 {
+  border-radius: 50%;
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  right: 54px;
+  bottom: 60px;
+}
 
 .newsletter {
-  background-color: blue;
+  margin-bottom: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background: #F4F9FF;
+}
+@media (min-width: 768px) {
+  .newsletter {
+    height: 292px;
+    border-radius: 75px;
+  }
+}
+@media (min-width: 1024px) {
+  .newsletter {
+    flex-direction: row;
+    background: #F4F9FF url(pseudo-rectangle.svg) no-repeat right;
+  }
+}
+@media (min-width: 1440px) {
+  .newsletter {
+    gap: 100px;
+  }
+}
+.newsletter .subscribe {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .newsletter .subscribe {
+    margin-bottom: 0;
+  }
+}
+.newsletter .subscribe h2 {
+  margin-bottom: 17px;
+}
+.newsletter form {
+  background-color: #FFF;
+  border: 1px solid #F1F1F1;
+  border-radius: 60px;
+  box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .newsletter form {
+    height: 80px;
+    padding: 10px 10px 10px 34px;
+    gap: 57px;
+  }
+}
+.newsletter form #email {
+  border: none;
+  height: 20px;
 }
 
 footer .line {

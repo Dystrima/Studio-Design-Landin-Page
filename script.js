@@ -21,10 +21,14 @@ modal.addEventListener("click", (e) => {
 });
 
 /* ///// FORM VALIDATION ///// */
+
 const form = document.querySelector("form");
 const yourname = document.querySelector("#name");
 const email = document.querySelector("#email");
 const company = document.querySelector("#company");
+
+const form2 = document.querySelector(".newsletter form");
+const email2 = document.querySelector(".newsletter #email");
 
 // This is from the Internet to check if the input is an email
 const validRegex =
@@ -33,6 +37,7 @@ const validRegex =
 let passName;
 let passEmail;
 let passCompany;
+let passEmail2;
 
 // SUCCESS FUNCTION
 function success(e) {
@@ -78,6 +83,7 @@ function error(e) {
   }
 }
 
+/* INSIDE MODAL */
 form.addEventListener("click", (event) => {
   event.preventDefault(); // Prevents the page to submit the form (and therefore refresh the page)
 
@@ -121,15 +127,43 @@ form.addEventListener("click", (event) => {
   });
 
   // console.log quand tout est ok
-  if (passUsername && passEmail && passCompany) {
+  if (passName && passEmail && passCompany) {
     console.log(yourname.value);
     console.log(email.value);
     console.log(company.value);
   }
 });
 
+/* NEWSLETTER */
+form2.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  // EMAIL
+  email2.addEventListener("change", (e) => {
+    if (email2.value.match(validRegex)) {
+      success(email2);
+      passEmail2 = true;
+    } else {
+      error(email2);
+      email2.previousElementSibling.innerText =
+        "Must be an email adress (eg. name@domain.com)";
+      passEmail2 = false;
+    }
+  });
+
+  if (passEmail2) {
+    console.log(email2.value);
+  }
+});
+
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+/////////////////////////////////////////////
+
 /* ///// SWIPER ///// */
 
+/* BRANDS */
 const swiper = new Swiper(".mySwiperLogo", {
   loop: true,
 
@@ -146,3 +180,5 @@ const swiper = new Swiper(".mySwiperLogo", {
 
   spaceBetween: 60,
 });
+
+/* CLIENTS */

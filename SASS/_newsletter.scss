@@ -1,3 +1,50 @@
 .newsletter {
-    background-color: blue;
+    margin-bottom: 107px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background: #F4F9FF;
+    @media (min-width: $breakpoint-tablet) {
+        height: 292px;
+        border-radius: 75px;
+    }
+    @media (min-width: $breakpoint-smallscreen) {
+        flex-direction: row;
+        background: #F4F9FF url(pseudo-rectangle.svg) no-repeat right;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        gap: 100px;
+    }
+
+    .subscribe {
+        margin-bottom: 20px;
+        @media (min-width: $breakpoint-tablet) {
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-bottom: 17px;
+        }
+    }
+
+    form {
+        background-color: $white;
+        border: 1px solid #F1F1F1;
+        border-radius: 60px;
+        box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        @media (min-width: $breakpoint-tablet) {
+            height: 80px;
+            padding: 10px 10px 10px 34px;
+            gap: 57px;
+        }
+
+        #email {
+            border: none;
+            height: 20px;
+        }
+    }
 }

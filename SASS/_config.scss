@@ -64,3 +64,17 @@ body {
     grid-template-columns:
         minmax(5vw, 1fr) repeat(12, minmax(11px, calc($max-width / 12))) minmax(5vw, 1fr);
 }
+
+.msg {
+    display: none;
+}
+
+.success {
+    color: green;
+    background-color: lightgreen;
+}
+
+.error {
+    color: darkred;
+    background-color: lightcoral;
+}
