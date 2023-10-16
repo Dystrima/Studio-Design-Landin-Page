@@ -174,10 +174,12 @@
 }
 
 .happy::after {
-    position: absolute;
-    content: url("Dot.svg");
-    top: 188px;
-    left: 230px;
+    @media (min-width: $breakpoint-tablet) {
+        position: absolute;
+        content: url("Dot.svg");
+        top: 188px;
+        left: 230px;
+    }
     @media (min-width: $breakpoint-desktop) {
         top: 188px;
         left: 230px;

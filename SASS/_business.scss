@@ -22,19 +22,23 @@
     }
 
     .title::after {
-        content: url("DotE7.svg");
-        position: absolute;
-        z-index: -5;
-        top: 284px;
-        left: 4px;
+        @media (min-width: $breakpoint-desktop) {
+            content: url("DotE7.svg");
+                position: absolute;
+                z-index: -5;
+                top: 284px;
+                left: 4px;
+        }
     }
 
     .title p::after {
-        content: url("DotE7.svg");
-        position: absolute;
-        z-index: -5;
-        top: 284px;
-        left: 213px;
+        @media (min-width: $breakpoint-desktop) {
+            content: url("DotE7.svg");
+            position: absolute;
+            z-index: -5;
+            top: 284px;
+            left: 213px;
+        }
     }
 
     .card-container {
@@ -44,8 +48,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        // display: grid;
-        // justify-items: center;
         gap: 30px;
         @media (min-width: $breakpoint-tablet) {
             display: grid;

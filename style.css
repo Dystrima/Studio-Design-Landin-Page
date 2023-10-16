@@ -260,12 +260,14 @@ footer h4 {
   left: -53px;
   bottom: -119px;
 }
-.hero .modal-btn::after {
-  content: url(Dot.svg);
-  z-index: -5;
-  position: absolute;
-  left: 160px;
-  bottom: -119px;
+@media (min-width: 768px) {
+  .hero .modal-btn::after {
+    content: url(Dot.svg);
+    z-index: -5;
+    position: absolute;
+    left: 160px;
+    bottom: -119px;
+  }
 }
 .hero .cover-img {
   position: relative;
@@ -381,19 +383,23 @@ footer h4 {
   top: -60px;
   left: -39px;
 }
-.business .title::after {
-  content: url("DotE7.svg");
-  position: absolute;
-  z-index: -5;
-  top: 284px;
-  left: 4px;
+@media (min-width: 1440px) {
+  .business .title::after {
+    content: url("DotE7.svg");
+    position: absolute;
+    z-index: -5;
+    top: 284px;
+    left: 4px;
+  }
 }
-.business .title p::after {
-  content: url("DotE7.svg");
-  position: absolute;
-  z-index: -5;
-  top: 284px;
-  left: 213px;
+@media (min-width: 1440px) {
+  .business .title p::after {
+    content: url("DotE7.svg");
+    position: absolute;
+    z-index: -5;
+    top: 284px;
+    left: 213px;
+  }
 }
 .business .card-container {
   grid-column: 2/-2;
@@ -726,11 +732,13 @@ footer h4 {
   }
 }
 
-.happy::after {
-  position: absolute;
-  content: url("Dot.svg");
-  top: 188px;
-  left: 230px;
+@media (min-width: 768px) {
+  .happy::after {
+    position: absolute;
+    content: url("Dot.svg");
+    top: 188px;
+    left: 230px;
+  }
 }
 @media (min-width: 1440px) {
   .happy::after {

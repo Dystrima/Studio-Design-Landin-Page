@@ -84,11 +84,13 @@
     }
 
     .modal-btn::after {
-        content: url(Dot.svg);
-        z-index: -5;
-        position: absolute;
-        left: 160px;
-        bottom: -119px;
+        @media (min-width: $breakpoint-tablet) {
+            content: url(Dot.svg);
+            z-index: -5;
+            position: absolute;
+            left: 160px;
+            bottom: -119px;
+        }
     }
 
     .cover-img {
