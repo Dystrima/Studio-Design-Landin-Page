@@ -13,7 +13,7 @@
     }
     @media (min-width: $breakpoint-smallscreen) {
         flex-direction: row;
-        background: #F4F9FF url(pseudo-rectangle.svg) no-repeat right;
+        background: #F4F9FF url("Assets/pseudo-rectangle.svg") no-repeat right;
     }
     @media (min-width: $breakpoint-desktop) {
         gap: 100px;
@@ -52,7 +52,7 @@
 
 .newsletter::before {
     position: absolute;
-    content: url("Rectangle 32.svg");
+    content: url("Assets/Rectangle 32.svg");
     bottom: -39px;
     left: -38px;
     z-index: -5;

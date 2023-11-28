@@ -254,7 +254,7 @@ footer h4 {
   max-width: 300px;
 }
 .hero .digital::after {
-  content: url(Dot.svg);
+  content: url("Assets/Dot.svg");
   z-index: -5;
   position: absolute;
   left: -53px;
@@ -262,7 +262,7 @@ footer h4 {
 }
 @media (min-width: 768px) {
   .hero .modal-btn::after {
-    content: url(Dot.svg);
+    content: url("Assets/Dot.svg");
     z-index: -5;
     position: absolute;
     left: 160px;
@@ -286,14 +286,14 @@ footer h4 {
   border-bottom-left-radius: 200px;
 }
 .hero .cover-img::before {
-  content: url("Ellipse 85.svg");
+  content: url("Assets/Ellipse 85.svg");
   position: absolute;
   top: 0;
   left: -63px;
   z-index: -5;
 }
 .hero .cover-img::after {
-  content: url("Rectangle 23.svg");
+  content: url("Assets/Rectangle 23.svg");
   position: absolute;
   bottom: -96px;
   right: 120px;
@@ -338,16 +338,16 @@ footer h4 {
   }
 }
 .client .swiper .google {
-  content: url("Google Logo.svg");
+  content: url("Assets/Google Logo.svg");
 }
 .client .swiper .airbnb {
-  content: url("Airbnb Logo.svg");
+  content: url("Assets/Airbnb Logo.svg");
 }
 .client .swiper .ubereats {
-  content: url("Uber Eats Logo.svg");
+  content: url("Assets/Uber Eats Logo.svg");
 }
 .client .swiper .amazon {
-  content: url("Amazon Logo.svg");
+  content: url("Assets/Amazon Logo.svg");
 }
 .client .swiper .caats {
   content: url(https://caats.co/wp-content/uploads/2021/01/logo.svg);
@@ -377,7 +377,7 @@ footer h4 {
   }
 }
 .business .title::before {
-  content: url("Rectangle 25.svg");
+  content: url("Assets/Rectangle 25.svg");
   position: absolute;
   z-index: -5;
   top: -60px;
@@ -385,7 +385,7 @@ footer h4 {
 }
 @media (min-width: 1440px) {
   .business .title::after {
-    content: url("DotE7.svg");
+    content: url("Assets/DotE7.svg");
     position: absolute;
     z-index: -5;
     top: 284px;
@@ -394,7 +394,7 @@ footer h4 {
 }
 @media (min-width: 1440px) {
   .business .title p::after {
-    content: url("DotE7.svg");
+    content: url("Assets/DotE7.svg");
     position: absolute;
     z-index: -5;
     top: 284px;
@@ -491,7 +491,7 @@ footer h4 {
 }
 .business .rectangle::before {
   position: absolute;
-  content: url("Ellipse 87.svg");
+  content: url("Assets/Ellipse 87.svg");
   bottom: -72px;
   right: 143px;
   z-index: -50;
@@ -540,13 +540,13 @@ footer h4 {
 }
 .agency .since2016::after {
   position: absolute;
-  content: url("Ellipse 86.svg");
+  content: url("Assets/Ellipse 86.svg");
   z-index: -5;
   left: -206px;
 }
 .agency .since2016::before {
   position: absolute;
-  content: url("Rectangle 26.svg");
+  content: url("Assets/Rectangle 26.svg");
   z-index: -5;
   left: -39px;
   top: -24px;
@@ -640,7 +640,7 @@ footer h4 {
   position: relative;
   width: 348px;
   height: 355px;
-  background: url("Ellipse 93.svg") no-repeat 21px;
+  background: url("Assets/Ellipse 93.svg") no-repeat 21px;
 }
 .happy .clients .bubbles-img img {
   position: absolute;
@@ -709,7 +709,7 @@ footer h4 {
 
 .happy::before {
   position: absolute;
-  content: url("Ellipse 94.svg");
+  content: url("Assets/Ellipse 94.svg");
   left: -10px;
   bottom: 670px;
   z-index: -5;
@@ -735,7 +735,7 @@ footer h4 {
 @media (min-width: 768px) {
   .happy::after {
     position: absolute;
-    content: url("Dot.svg");
+    content: url("Assets/Dot.svg");
     top: 188px;
     left: 230px;
   }
@@ -766,7 +766,7 @@ footer h4 {
 @media (min-width: 1024px) {
   .newsletter {
     flex-direction: row;
-    background: #F4F9FF url(pseudo-rectangle.svg) no-repeat right;
+    background: #F4F9FF url("Assets/pseudo-rectangle.svg") no-repeat right;
   }
 }
 @media (min-width: 1440px) {
@@ -808,7 +808,7 @@ footer h4 {
 
 .newsletter::before {
   position: absolute;
-  content: url("Rectangle 32.svg");
+  content: url("Assets/Rectangle 32.svg");
   bottom: -39px;
   left: -38px;
   z-index: -5;

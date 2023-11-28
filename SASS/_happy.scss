@@ -85,7 +85,7 @@
             position: relative;
             width: 348px;
             height: 355px;
-            background: url('Ellipse 93.svg') no-repeat 21px;
+            background: url('Assets/Ellipse 93.svg') no-repeat 21px;
             img {
                 position: absolute;
             }
@@ -156,7 +156,7 @@
 
 .happy::before {
     position: absolute;
-    content: url("Ellipse 94.svg");
+    content: url("Assets/Ellipse 94.svg");
     left: -10px;
     bottom: 670px;
     z-index: -5;
@@ -176,7 +176,7 @@
 .happy::after {
     @media (min-width: $breakpoint-tablet) {
         position: absolute;
-        content: url("Dot.svg");
+        content: url("Assets/Dot.svg");
         top: 188px;
         left: 230px;
     }

@@ -14,7 +14,7 @@
     }
 
     .title::before {
-        content: url("Rectangle 25.svg");
+        content: url("Assets/Rectangle 25.svg");
         position: absolute;
         z-index: -5;
         top: -60px;
@@ -23,7 +23,7 @@
 
     .title::after {
         @media (min-width: $breakpoint-desktop) {
-            content: url("DotE7.svg");
+            content: url("Assets/DotE7.svg");
                 position: absolute;
                 z-index: -5;
                 top: 284px;
@@ -33,7 +33,7 @@
 
     .title p::after {
         @media (min-width: $breakpoint-desktop) {
-            content: url("DotE7.svg");
+            content: url("Assets/DotE7.svg");
             position: absolute;
             z-index: -5;
             top: 284px;
@@ -129,7 +129,7 @@
 
     .rectangle::before {
         position: absolute;
-        content: url("Ellipse 87.svg");
+        content: url("Assets/Ellipse 87.svg");
         bottom: -72px;
         right: 143px;
         z-index: -50;
