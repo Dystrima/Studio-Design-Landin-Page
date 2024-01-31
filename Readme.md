@@ -1,4 +1,4 @@
-# Studio Design Landin Page
+# Studio Design Landing Page
 
 A front end exercise done during my training at [BeCode](https://becode.org/all-trainings/pedagogical-framework-junior-developer/).
 
